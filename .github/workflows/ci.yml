@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-check:
+    name: Python Syntax & Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install paramiko pyflakes
+
+      - name: ✅ Check syntax (pyflakes)
+        run: pyflakes mcp_bridge.py
+
+      - name: 🔍 Verify import structure
+        run: python -c "import ast; ast.parse(open('mcp_bridge.py').read()); print('AST parse OK')"
