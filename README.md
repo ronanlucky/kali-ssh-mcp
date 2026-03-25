@@ -17,7 +17,6 @@
 [![MCP](https://img.shields.io/badge/MCP-2024--11--05-blueviolet?style=for-the-badge&logo=anthropic&logoColor=white)](https://modelcontextprotocol.io)
 [![Claude](https://img.shields.io/badge/Claude-Desktop-orange?style=for-the-badge&logo=anthropic&logoColor=white)](https://claude.ai)
 [![Kali](https://img.shields.io/badge/Kali-Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)](https://kali.org)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![CI](https://img.shields.io/github/actions/workflow/status/ronanlucky/kali-ssh-mcp/ci.yml?style=for-the-badge&label=CI&logo=githubactions&logoColor=white)](https://github.com/ronanlucky/kali-ssh-mcp/actions)
 
 <br/>
@@ -193,12 +192,6 @@ kali-ssh-mcp/
 - 🔒 Restrict SSH access to trusted hosts only  
 - 🚫 Never run against systems without explicit permission
 - 📋 All commands are logged to `mcp_bridge.log`
-
----
-
-## 📄 License
-
-MIT — see [LICENSE](LICENSE)
 
 ---
 
